@@ -10,6 +10,10 @@ const AxiosApi = {
     };
     return await axios.post(KH_DOMAIN + "/users/login", login);
   },
+  // 회원 정보 조회
+  memberList: async (id) => {
+    return await axios.get(KH_DOMAIN + `/users/member/?id=${id}`);
+  },
 };
 
 export default AxiosApi;
