@@ -13,6 +13,7 @@ const Home = () => {
       case 2:
         break;
       case 3:
+        navigate("/profile");
         break;
       case 4:
         navigate("/setting");
@@ -25,8 +26,8 @@ const Home = () => {
       <div>
         <ButtonContainer>
           <TransBtn onClick={() => onClickBtn(1)}>MemberList</TransBtn>
-          <TransBtn onClick={() => onClickBtn(2)}>MyPage</TransBtn>
-          <TransBtn onClick={() => onClickBtn(3)}>News</TransBtn>
+          <TransBtn onClick={() => onClickBtn(2)}>News</TransBtn>
+          <TransBtn onClick={() => onClickBtn(3)}>Profile</TransBtn>
           <TransBtn onClick={() => onClickBtn(4)}>Setting</TransBtn>
         </ButtonContainer>
       </div>
